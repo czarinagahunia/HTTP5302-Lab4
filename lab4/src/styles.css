@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+#main-nav ul {
+    position: absolute;
+    padding-left:0;
+}
+#main-nav ul > li {
+    list-style: none;
+}
+.main-nav--first li[class^="main-nav--firstlist"] > a {
+    color:#000000;
+    text-decoration:none;
+    font-size:1.2em;
+}
+.main-nav--first li {
+    display:inline-block;
+    padding-right:1.25rem;
+}
+.main-nav--second, .main-nav--third {
+    position:absolute;
+    left:-1000000px;
+    display:block;
+}
+.main-nav--first li:hover > ul {
+    left:0;
+}
+.main-nav--second li:hover > ul {
+    left:55px;
+    top:37px;
+}
+.main-nav--second {
+    width:100px;
+}
+.main-nav--third {
+    width:150px;
+}
